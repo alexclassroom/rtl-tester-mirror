@@ -5,12 +5,12 @@ Author URI:        http://www.webmandesign.eu/
 Plugin URI:        http://www.webmandesign.eu/
 Requires at least: 4.3
 Tested up to:      4.4.2
-Stable tag:        1.0
+Stable tag:        1.0.1
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, rtl, right to left, ltr, left to right, layout, testing, mirror, turn, transform
 
-Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it with so it looks like LTR.
+Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it so it looks like LTR.
 
 == Description ==
 
@@ -60,10 +60,16 @@ Well, the same as above...
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixing typos.
+
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Fixing typos.
 
 = 1.0 =
 This is initial plugin release.

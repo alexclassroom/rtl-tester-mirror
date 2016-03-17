@@ -1,6 +1,6 @@
 # WebMan RTL Tester Mirror
 
-**A WordPress plugin that makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it with so it looks like LTR.**
+**A WordPress plugin that makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it so it looks like LTR.**
 
 
 ## Description
