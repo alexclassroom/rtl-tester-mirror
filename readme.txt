@@ -1,11 +1,11 @@
-=== WebMan RTL Tester Mirror ===
+=== RTL Tester Mirror by WebMan ===
 Contributors:      webmandesign
 Donate link:       http://www.webmandesign.eu/
 Author URI:        http://www.webmandesign.eu/
 Plugin URI:        http://www.webmandesign.eu/
 Requires at least: 4.3
 Tested up to:      4.4.2
-Stable tag:        1.0.1
+Stable tag:        1.0.2
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, rtl, right to left, ltr, left to right, layout, testing, mirror, turn, transform
@@ -55,8 +55,8 @@ Well, the same as above...
 
 == Screenshots ==
 
-1. Standard RTL website
-2. Mirrored RTL website using the plugin
+1. Standard RTL website testing (using "RTL Tester" plugin)
+2. Mirrored RTL website using the "RTL Tester Mirror by WebMan" plugin
 
 == Changelog ==
 

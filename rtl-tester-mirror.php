@@ -7,14 +7,14 @@
  * @license    GPL-3.0, http://www.gnu.org/licenses/gpl-3.0.html
  *
  * @since    1.0
- * @version  1.0.1
+ * @version  1.0.2
  *
  * @link  http://www.webmandesign.eu
  *
- * Plugin Name:        WebMan RTL Tester Mirror
+ * Plugin Name:        RTL Tester Mirror by WebMan
  * Plugin URI:         http://www.webmandesign.eu/
  * Description:        Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it with CSS transform so it looks like LTR. Works great with RTL Tester plugin.
- * Version:            1.0.1
+ * Version:            1.0.2
  * Author:             WebMan Design, Oliver Juhas
  * Author URI:         http://www.webmandesign.eu/
  * Text Domain:        rtl-tester-mirror
