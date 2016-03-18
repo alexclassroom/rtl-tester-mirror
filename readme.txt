@@ -55,8 +55,9 @@ Well, the same as above...
 
 == Screenshots ==
 
-1. Standard RTL website testing (using "RTL Tester" plugin)
-2. Mirrored RTL website using the "RTL Tester Mirror by WebMan" plugin
+1. Standard LTR website layout
+2. Standard RTL website layout when testing using "RTL Tester" plugin
+3. Mirrored RTL website using the "RTL Tester Mirror by WebMan" plugin
 
 == Changelog ==
 
