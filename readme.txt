@@ -5,12 +5,13 @@ Author URI:        http://www.webmandesign.eu/
 Plugin URI:        http://www.webmandesign.eu/
 Requires at least: 4.3
 Tested up to:      4.4.2
-Stable tag:        1.0.2
+Stable tag:        1.0.3
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, rtl, right to left, ltr, left to right, layout, testing, mirror, turn, transform
 
 Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it so it looks like LTR.
+
 
 == Description ==
 
@@ -23,7 +24,7 @@ Works great with [RTL Tester](https://wordpress.org/plugins/rtl-tester/) plugin.
 = Features =
 
 * Mirrors RTL website layout to make it look like LTR layout
-* Plugin creates blue borders around the mirrored layout to let you know it's in use
+* Plugin adds a blue notification with "Mirrored RTL" text at the top when the RTL website is mirrored
 
 = Plugin Localization =
 
@@ -37,11 +38,13 @@ Translate the plugin by clicking the **"Translate RTL Tester Mirror"** button un
 * [Follow @webmandesigneu](https://twitter.com/webmandesigneu/)
 * [Visit WebMan Design](http://www.webmandesign.eu)
 
+
 == Installation ==
 
 1. Unzip the plugin download file and upload `rtl-tester-mirror` folder into the `/wp-content/plugins/` directory.
 2. Activate the plugin through the *"Plugins"* menu in WordPress.
 3. Switch your website into RTL layout (with [RTL Tester](https://wordpress.org/plugins/rtl-tester/) plugin, for example).
+
 
 == Frequently Asked Questions ==
 
@@ -53,21 +56,39 @@ Well, this seems to be a bug with your browser. The plugin actually applies a CS
 
 Well, the same as above...
 
+
 == Screenshots ==
 
 1. Standard LTR website layout
 2. Standard RTL website layout when testing using "RTL Tester" plugin
 3. Mirrored RTL website using the "RTL Tester Mirror by WebMan" plugin
 
+
 == Changelog ==
 
+= 1.0.3 =
+* **Update**: Removing border around the mirrored website in favor of simple notification at the top
+* **Update**: Function name
+* **Fix**: Fixing localization issue
+
+= 1.0.2 =
+* **Update**: Renaming plugin
+* **Update**: Uploading screenshots
+
 = 1.0.1 =
-* Fixing typos.
+* **Fix**: Fixing typos
 
 = 1.0 =
 * Initial release.
 
+
 == Upgrade Notice ==
+
+= 1.0.3 =
+Removing border around the mirrored website in favor of simple notification at the top, updating function name, fixing localization issue.
+
+= 1.0.2 =
+Changing plugin name, uploading screenshots.
 
 = 1.0.1 =
 Fixing typos.

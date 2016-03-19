@@ -6,15 +6,12 @@
  * @copyright  WebMan Design, Oliver Juhas
  * @license    GPL-3.0, http://www.gnu.org/licenses/gpl-3.0.html
  *
- * @since    1.0
- * @version  1.0.2
- *
  * @link  http://www.webmandesign.eu
  *
  * Plugin Name:        RTL Tester Mirror by WebMan
  * Plugin URI:         http://www.webmandesign.eu/
  * Description:        Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it with CSS transform so it looks like LTR. Works great with RTL Tester plugin.
- * Version:            1.0.2
+ * Version:            1.0.3
  * Author:             WebMan Design, Oliver Juhas
  * Author URI:         http://www.webmandesign.eu/
  * Text Domain:        rtl-tester-mirror
@@ -33,9 +30,9 @@
  * Mirror the RTL site
  *
  * @since    1.0
- * @version  1.0
+ * @version  1.0.3
  */
-function wm_rtl_mirror_styles() {
+function rtl_tester_mirror_styles() {
 
 	// Requirements check
 
@@ -55,35 +52,27 @@ function wm_rtl_mirror_styles() {
 
 			$styles .= 'html {
 					transform: scaleX(-1);
-					border-left: #21759b solid 10px;
-					border-right: #21759b solid 10px;
 				}';
 
 		// Display notice
 
-			$styles .= 'html::after, body::after {
+			$styles .= 'html::after {
 					content: "' . esc_attr__( 'Mirrored RTL', 'rtl-tester-mirror' ) . '";
 					position: fixed;
 					display: inline-block;
-					left: 10px;
-					top: 360px;
-					padding: 5px 10px;
-					font-size: 10px;
+					left: 50%;
+					top: -3px;
+					padding: 10px 20px;
+					font-size: 12px;
 					font-family: sans-serif;
 					text-transform: uppercase;
 					background: #21759b;
 					color: #fff;
 					white-space: nowrap;
 					z-index: 9999999;
-					transform: scaleX(-1) rotate(90deg);
-					transform-origin: 0 50%;
-				}';
-
-			$styles .= 'html::after {
-					left: auto;
-					right: 10px;
-					transform: scaleX(-1) rotate(-90deg);
-					transform-origin: 100% 50%;
+					border-radius: 3px;
+					transform: scaleX(-1) translateX(50%);
+					transform-origin: 50% 0;
 				}';
 
 		// WP toolbar fix
@@ -96,7 +85,25 @@ function wm_rtl_mirror_styles() {
 
 		echo '<style type="text/css" media="screen">' . $styles . '</style>';
 
-} // /wm_rtl_mirror_styles
+} // /rtl_tester_mirror_styles
 
-add_action( 'wp_head',            'wm_rtl_mirror_styles', 9999 );
-add_action( 'admin_print_styles', 'wm_rtl_mirror_styles', 9999 );
+add_action( 'wp_head',            'rtl_tester_mirror_styles', 9999 );
+add_action( 'admin_print_styles', 'rtl_tester_mirror_styles', 9999 );
+
+
+
+/**
+ * Load plugin text domain
+ *
+ * @since    1.0.3
+ * @version  1.0.3
+ */
+function rtl_tester_mirror_load_plugin_textdomain() {
+
+	// Processing
+
+		load_plugin_textdomain( 'rtl-tester-mirror', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+
+} // /rtl_tester_mirror_load_plugin_textdomain
+
+add_action( 'plugins_loaded', 'rtl_tester_mirror_load_plugin_textdomain' );

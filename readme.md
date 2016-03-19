@@ -14,7 +14,7 @@ Works great with [RTL Tester](https://wordpress.org/plugins/rtl-tester/) plugin.
 ### Features
 
 * Mirrors RTL website layout to make it look like LTR layout
-* Plugin creates blue borders around the mirrored layout to let you know it's in use
+* Plugin adds a blue notification with "Mirrored RTL" text at the top when the RTL website is mirrored
 
 ### Plugin Localization
 
