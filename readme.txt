@@ -5,19 +5,19 @@ Author URI:        http://www.webmandesign.eu/
 Plugin URI:        http://www.webmandesign.eu/
 Requires at least: 4.3
 Tested up to:      4.4.2
-Stable tag:        1.0.3
+Stable tag:        1.0.4
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, rtl, right to left, ltr, left to right, layout, testing, mirror, turn, transform
 
-Makes it easy for non-RTL language speaker to test the RTL website layout by mirroring it so it looks like LTR.
+Makes it easy for LTR language speaker to test the RTL website layout by mirroring it so it looks like LTR.
 
 
 == Description ==
 
 This plugin simply mirrors the Right To Left (RTL) website layout using a CSS transform making it look like Left To Right (LTR) website.
 
-This is a great tool for non-RTL language speakers for testing RTL layouts of WordPress themes and plugins, making the testing process much easier for you eyes and brain ;)
+This is a great tool for LTR language speakers for testing RTL layouts of WordPress themes and plugins, making the testing process much easier for you eyes and brain ;)
 
 Works great with [RTL Tester](https://wordpress.org/plugins/rtl-tester/) plugin.
 
@@ -66,6 +66,9 @@ Well, the same as above...
 
 == Changelog ==
 
+= 1.0.4 =
+* **Fix**: Fixing texts
+
 = 1.0.3 =
 * **Update**: Removing border around the mirrored website in favor of simple notification at the top
 * **Update**: Function name
@@ -83,6 +86,9 @@ Well, the same as above...
 
 
 == Upgrade Notice ==
+
+= 1.0.4 =
+Fixing texts.
 
 = 1.0.3 =
 Removing border around the mirrored website in favor of simple notification at the top, updating function name, fixing localization issue.
